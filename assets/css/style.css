@@ -434,3 +434,17 @@ h1,h2,h3,h4{font-weight:400;text-transform:uppercase;letter-spacing:.01em}
 /* four trust points wrap to three rows on a phone; the rest are repeated
    in the hero and footer, so the bar keeps only the first there */
 @media(max-width:600px){.topbar span:not(:first-child){display:none}}
+
+/* ---- inner pages: poster heads, contents on the right ---- */
+.pagehead{background:#000;padding:3.4rem 0 2.4rem;margin-bottom:2rem;position:relative}
+.pagehead::after{content:"";position:absolute;left:0;right:0;bottom:0;height:6px;
+  background:repeating-linear-gradient(-45deg,var(--brand) 0 12px,#000 12px 24px)}
+.pagehead h1{font-size:clamp(2.6rem,6vw,4.6rem);line-height:.95}
+.policy{grid-template-columns:1fr 250px}
+.policy__toc{order:2;border:0;border-left:4px solid var(--brand);background:#1a1210}
+.policy__toc h4{color:var(--brand);font-family:var(--head);font-weight:400;letter-spacing:.12em}
+.policy__body h2{color:var(--brand)}
+@media(max-width:900px){.policy{grid-template-columns:1fr}.policy__toc{order:0}}
+.grid-2:has(form.form)>div:first-child{border:2px solid var(--brand);padding:1.8rem;background:#1a1210}
+.grid-2:has(form.form) .form{max-width:none}
+.summary,.checkout-panel{border:2px solid var(--brand)}
