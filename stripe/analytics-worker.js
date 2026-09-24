@@ -31,8 +31,10 @@ const KEEP = 7 * DAY;
 
 // Fill these in from this store's own Stripe account before deploying the Worker.
 const PRICES = {
-  'FM-CREX6M': 'price_xxx', 'FM-DP5000': 'price_xxx',
-  'FM-TW1375G': 'price_xxx', 'FM-360SW': 'price_xxx',
+  'FM-CREX6M': 'price_1UJ2XmGd7L8SA7376P2K4sKy',
+  'FM-DP5000': 'price_1UJ2XoGd7L8SA737NVB6axJk',
+  'FM-TW1375G': 'price_1UJ2XrGd7L8SA737DKWQtP3N',
+  'FM-360SW': 'price_1UJ2XuGd7L8SA737nqsRisVZ',
 };
 
 export default {
