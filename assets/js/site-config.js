@@ -32,9 +32,9 @@ window.SITE_CONFIG = {
   // One Stripe Payment Link per machine. Blank = that machine routes to an
   // enquiry instead of pretending to take payment.
   paymentLinks: {
-    "FM-CREX6M": "",
-    "FM-DP5000": "",
-    "FM-TW1375G": "",
-    "FM-360SW": ""
+    "FM-CREX6M": "https://buy.stripe.com/28E4gzet09UGbV21UU6c00o",
+    "FM-DP5000": "https://buy.stripe.com/fZubJ13Omgj49MU2YY6c00p",
+    "FM-TW1375G": "https://buy.stripe.com/5kQ7sL5Wu8QC2ksbvu6c00q",
+    "FM-360SW": "https://buy.stripe.com/00w14nacK6Iuf7e8ji6c00r"
   }
 };
