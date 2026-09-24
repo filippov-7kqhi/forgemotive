@@ -368,3 +368,69 @@ legend{padding:0 .5rem;font-weight:800;font-size:.86rem;letter-spacing:.08em;tex
 
 .footer__grid [data-biz-addr]{display:block}
 .footer__grid [data-biz-addr][hidden]{display:none!important}
+
+/* ==== IDENTITY LAYER: ForgeMotive - workshop poster ======================== */
+/* Zero radius, hazard-stripe rules, a reversed split hero with the photograph
+   cut on an angle, poster-weight uppercase type and hard offset shadows. */
+:root{--radius:0px}
+.qty input,.field input,.field textarea,.field select,.specgrid div,.trustrow div,.result,.paylist,
+.gallery__thumbs button,.cartitem img,.cartitem input,.tile__ico,.card__tag,.cartbadge{border-radius:0}
+h1,h2,h3,h4{font-weight:400;text-transform:uppercase;letter-spacing:.01em}
+
+.btn{border-radius:0;text-transform:uppercase;font-family:var(--head);font-weight:400;letter-spacing:.06em;font-size:1.05rem}
+.btn--lg{font-size:1.2rem;padding:1.05rem 2rem}
+.btn--primary{box-shadow:5px 5px 0 #faf0ec}
+.btn--primary:hover{background:var(--brand);transform:translate(-2px,-2px);box-shadow:7px 7px 0 #faf0ec}
+.btn--ghost{background:transparent;border-color:#faf0ec;color:#faf0ec}
+.btn--ghost:hover{background:#faf0ec;border-color:#faf0ec;color:#170802}
+.btn--ghost.is-added{background:var(--brand);border-color:var(--brand);color:var(--brand-ink)}
+.nav a.btn--primary,.nav a.btn--primary:hover{box-shadow:none;transform:none}
+
+.topbar{background:#000;color:var(--brand);font-family:var(--head);font-weight:400;letter-spacing:.14em;
+  text-transform:uppercase;font-size:.86rem}
+.header{border-bottom:0;background:rgba(16,11,9,.97)}
+.header::after{content:"";display:block;height:6px;
+  background:repeating-linear-gradient(-45deg,var(--brand) 0 12px,#100b09 12px 24px)}
+.nav a{font-family:var(--head);font-weight:400;text-transform:uppercase;letter-spacing:.08em;font-size:1.08rem}
+
+.hero{padding:0;background:#0b0706;overflow:hidden}
+.hero__grid{width:100%;max-width:none;margin:0;grid-template-columns:1.05fr 1fr;gap:3.5rem;align-items:stretch;
+  min-height:min(82vh,720px);padding-right:max(1.2rem,calc((100% - 1200px)/2))}
+.hero__grid>div:first-child{order:2;align-self:center;padding:4rem 0}
+.hero__media{order:1;border:0;border-radius:0;box-shadow:none;clip-path:polygon(0 0,100% 0,84% 100%,0 100%)}
+.hero__media img{width:100%;height:100%;object-fit:cover;object-position:100% 55%}
+.hero h1{font-size:clamp(2.8rem,5.4vw,4.6rem);line-height:.93}
+.hero .eyebrow{background:var(--brand);color:#170802;display:inline-block;padding:.3rem .65rem .2rem;letter-spacing:.16em}
+.hero__pills span{border-left:3px solid var(--brand);padding-left:.55rem}
+@media(max-width:900px){
+  .hero__grid{grid-template-columns:1fr;min-height:0;padding:0;gap:0}
+  .hero__grid>div:first-child{padding:2.4rem 1.2rem 2.8rem}
+  .hero__media{clip-path:polygon(0 0,100% 0,100% 86%,0 100%)}
+  .hero__media img{aspect-ratio:1200/760;height:auto}
+}
+
+.card{border:0;border-top:4px solid var(--brand);background:#1a1210}
+.card:hover{transform:translateY(-4px);box-shadow:0 0 0 1px var(--brand),0 20px 40px rgba(0,0,0,.5)}
+.card__tag{font-family:var(--head);font-weight:400;letter-spacing:.1em}
+
+.sec-head.center{text-align:left;margin-inline:0;max-width:none;border-left:6px solid var(--brand);padding-left:1.2rem}
+.band{background:#160e0b;border-block:1px solid #2a1a15}
+.tile{border-left:3px solid var(--brand)}
+.step::before{color:var(--brand);opacity:1;font-size:3.2rem}
+.acc summary{font-family:var(--head);font-weight:400;text-transform:uppercase;letter-spacing:.03em;font-size:1.1rem}
+
+.cta{border-radius:0;background:var(--brand);border:0;color:#170802}
+.cta h2{color:#170802}
+.cta p{color:#2b1006}
+.cta .btn--primary{background:#170802;color:#faf0ec;box-shadow:5px 5px 0 #faf0ec}
+.cta .btn--primary:hover{background:#000}
+.cta .btn--ghost{border-color:#170802;color:#170802}
+.cta .btn--ghost:hover{background:#170802;border-color:#170802;color:#faf0ec}
+
+.footer{background:#000;border-top:0;padding-top:0}
+.footer::before{content:"";display:block;height:6px;margin-bottom:3rem;
+  background:repeating-linear-gradient(-45deg,var(--brand) 0 12px,#000 12px 24px)}
+.priceblock{border:2px solid var(--brand)}
+/* four trust points wrap to three rows on a phone; the rest are repeated
+   in the hero and footer, so the bar keeps only the first there */
+@media(max-width:600px){.topbar span:not(:first-child){display:none}}
